@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./index2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img class="logo" src="./uday logo.png" alt="logo">
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="headerText">
+                <p>Front-End Developer</p>
+                <h1>Hi, I'm <span>Udhayanithi</span> From <br>Pudukkotai.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------- About  ------------------------->
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./udhayanithi 2.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subTitle">About Me</h1>
+                    <p>Hi, I'm Udhayanithi, a 23-year-old with a fascination for technology. My hobbies revolve around keeping up with the
+                         latest in the tech world, always eager to hear the latest technical news.<br><br>
+
+                        I've recently completed a Front-End Development course at Login 360 Institute Velachary, where I honed my skills in web development. 
+                        I'm truly passionate about website design and creation, and I find joy in crafting beautiful and functional online experiences.</p>
+
+                        <div class="tabTitles">
+                            <p class="tabLinks skillLink" onclick="openTab('skills')">Skills</p>
+                            <p class="tabLinks" onclick="openTab('experience')">Experience</p>
+                            <p class="tabLinks" onclick="openTab('education')">Education</p>
+                        </div>
+                        <div class="tabContents skillTab" id="skills">
+                            <ul>
+                                <li><span>Web development</span><br>Web App Development</li>
+                                <li><span>Front-End development</span><br> Front-End Page Development</li>
+                            </ul>
+                        </div>
+                        <div class="tabContents" id="experience">
+                            <ul>
+                                <li><span>Nov 2021 - Present</span><br>Quality Inspector At Rane NSK</li>
+                            </ul>
+                        </div>
+                        <div class="tabContents" id="education">
+                            <ul>
+                                <li><span>2017 - 2021</span><br>BE Mechanical Engineering</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+<!----------------------------------- Portfolio ------------------------------------>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subTitle">My Work</h1>
+        <div class="workList">
+            <div class="work">
+                <img src="./Web Image-1.jpg" alt="Image-1">
+                <div class="layer">
+                    <h3>Shopping Website</h3>
+                    <p>Provide Detailed Information About The Product, Including Features, Materials And Specifications. Also Mentioned Brand Names.</p>
+                       <a target="_blank"  href="https://github.com/Mechon-uday/Shopping_Website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./Web Image-2.jpg" alt="Image-1">
+                <div class="layer">
+                    <h3>Organic Spices Website</h3>
+                    <p>Provide Essential Information Such As Product Name, Brand, Weight. List The Ingredients, Especialy If The Product Is Food.</p>
+                       <a target="_blank" href="https://github.com/Mechon-uday/Organic_spices_Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+    </div>
+</div>
+
+<!---------------------------------------------- Contact  ----------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contactLeft">
+                <h1 class="subTitle">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> udhayanithi081999@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 7867895813</p>
+                <div class="socialIcons">
+                    <a target="_blank" href="https://instagram.com/mr_mechon_uday?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+                    <a target="_blank" href="https://x.com/udhayanithi_r?t=Sh7oRrGakHEZUbBI_QCBow&s=09"><i class="fa-solid fa-x"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/udhayanithir"><i class="fa-brands fa-linkedin"></i></a>
+                    <a target="_blank" href="https://wa.me/qr/TAZ62W3RZOIQK1"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <a  href="./Udhayanithi.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contactRight">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email ID" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyRight">
+        <p>Copyright © 2023 By Udhayanithi R.</p>
+    </div>
+</div>
+
+    <script src="./index2.js"></script>
+</body>
+</html>
